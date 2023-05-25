@@ -25,6 +25,7 @@ public class M4Ejercicio_Grupal8 {
 		do {
 			System.out.println("Ingrese tipo de usuario : Cliente/Profesional/Administrativo");
 			tipo = scan.nextLine();
+			tipo = tipo.toLowerCase();
 		} while (tipo.isBlank());
 	}
 
@@ -32,7 +33,7 @@ public class M4Ejercicio_Grupal8 {
 		Scanner scan = new Scanner(System.in);
 
 		switch (tipo) {
-		case "Cliente":
+		case "cliente":
 			System.out.println("Ingrese direccion");
 			direccion = scan.nextLine();
 			System.out.println("Ingrese telefono");
@@ -40,25 +41,25 @@ public class M4Ejercicio_Grupal8 {
 			System.out.println("Ingrese la cantidad de empleados");
 			Scanner cantemp = new Scanner(System.in);
 			cantEmpleados = cantemp.nextInt();
-			
+
 			break;
 
-		case "Profesional":
+		case "profesional":
 			System.out.println("Ingrese años de experiencia");
 			añosExp = scan.nextInt();
-			
+
 			System.out.println("Ingrese departamento al cual pertenece");
 			Scanner depa = new Scanner(System.in);
 			departamento = depa.nextLine();
-			
+
 			break;
 
-		case "Administrativo":
+		case "administrativo":
 			System.out.println("Ingrese la funcion que cumple");
 			funcion = scan.nextLine();
 			System.out.println("Ingrese nombre de superior");
 			nombreSup = scan.nextLine();
-			
+
 			break;
 		}
 	}
@@ -70,22 +71,19 @@ public class M4Ejercicio_Grupal8 {
 		System.out.println("Run: " + run);
 		System.out.println("Tipo de usuario: " + tipo);
 
-		if (tipo.equals("Cliente")) {
+		if (tipo.equals("cliente")) {
 			System.out.println("Dirección: " + direccion);
 			System.out.println("Telefono: " + telefono);
 			System.out.println("Cantidad de empleados: " + cantEmpleados);
-		} else if (tipo.equals("Profesional")) {
+		} else if (tipo.equals("profesional")) {
 			System.out.println("Años de experiencia: " + añosExp);
 			System.out.println("Departamento: " + departamento);
-		} else if (tipo.equals("Administrativo")) {
+		} else if (tipo.equals("administrativo")) {
 			System.out.println("Función: " + funcion);
 			System.out.println("Nombre de Superior: " + nombreSup);
-			
+
 		}
 
-		
-
-		
 	}
 
 	static String nombre = "";
@@ -102,7 +100,7 @@ public class M4Ejercicio_Grupal8 {
 
 	public static void main(String[] args) {
 
-		System.out.println("Asesorias en prevecion de riesgos SPA.");
+		System.out.println("Asesorias en prevención de riesgos SPA.");
 		System.out.println("Bienvenido");
 
 		registrar();

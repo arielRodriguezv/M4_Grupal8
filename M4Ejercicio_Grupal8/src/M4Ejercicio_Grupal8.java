@@ -16,11 +16,16 @@ public class M4Ejercicio_Grupal8 {
 		System.out.println("Ingrese Run");
 		run = id.nextLine();
 		
+		Scanner type = new Scanner(System.in);
+		System.out.println("Ingrese tipo de usuario : Cliente/Profesional/Administrativo");
+		tipo = type.nextLine();
+		
 	}
 	
 	static String nombre = "";
 	static String fechaNac = "";
 	static String run = "";
+	static String tipo = "";
 
 	public static void main(String[] args) {
 		
@@ -35,6 +40,7 @@ public class M4Ejercicio_Grupal8 {
 		System.out.println("Nombre: " + nombre);
 		System.out.println("Fecha de nacimiento: " + fechaNac);
 		System.out.println("Run: " + run);
+		System.out.println("Tipo de usuario: " + tipo);
 
 	}
 
